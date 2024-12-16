@@ -4,7 +4,7 @@ import "./normalize.css";
 import "./styles.css";
 
 // Import Modules
-import { WeatherFns } from "./weather.js";
+import { View } from "./view.js";
 
 
 
@@ -12,4 +12,4 @@ import { WeatherFns } from "./weather.js";
 
 /*=========================== CODE ===========================*/
 
-WeatherFns.getWeeklyWeather("boulogne");
+View.start();
