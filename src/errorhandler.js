@@ -1,8 +1,14 @@
 class ErrorHandler {
 
-    Handle(error){
-        alert(error);
-        throw new unhandledError(error);
+    static handle(error){
+        if (error.message == 400){
+            alert("Invalid Request, try again!");
+            console.error("Invalid Request 400");
+        } else{
+            alert(error);
+            console.error(error);
+        }
+
     }
 }
 

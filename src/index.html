@@ -9,11 +9,21 @@
     <header class="headbar">MyWeather</header>
     <div id="content">
       <div class="search">
-<input type="text" class="searchBar" placeholder="Desired Location...">
-<button class="searchBtn">Search</button>
+        <input
+          type="text"
+          class="searchBar"
+          placeholder="Desired Location..."
+          required
+        />
+        <select id="type" required>
+          <option value="metric">Metric</option>
+          <option value="us">Imperial</option>
+        </select>
+        <button class="searchBtn">Search</button>
       </div>
-      <div class="display">
-        
+      <div class="weatherdisplay"></div>
+      <div class="loadingdisplay">
+        <img src="./loading.gif" alt="loading" class="loadingicon">
       </div>
     </div>
   </body>

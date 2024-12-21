@@ -1,24 +1,63 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 15fr;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 15fr;
+  width: 100vw;
+  height: 100vh;
 }
 
-.headbar{
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2vh
+.headbar {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2vh;
 }
-#content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2vh
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
 }
+
+.daybox {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.daycontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 6rem;
+  height: 6rem;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loadingicon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.loadingdisplay {
+  padding: 2rem;
+  display: none;
+}
+.loadingdisplay.show {
+    padding: 2rem;
+    display: block;
+  }
